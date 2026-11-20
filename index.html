@@ -1,12 +1,10 @@
-<!DOCTYPE html>
-<html>
-<head>
-<title>My School</title>
-<script src="behavior.js"></script>
-</head>
-<body>
-<h1>Hello</h1>
-<img src="https://via.placeholder.com/800" id="smart_thumbnail" class="small" alt="Thumbnail">
-<script src="behavior.js"></script>
-</body>
-</html>
+document.addEventListener("DOMContentLoaded", function() {
+  var thumbnailElement = document.getElementById("smart_thumbnail");
+  thumbnailElement.addEventListener("click", function() {
+    if (thumbnailElement.className == "small") {
+      thumbnailElement.className = "";
+    } else {
+      thumbnailElement.className = "small";
+    }
+  });
+});
