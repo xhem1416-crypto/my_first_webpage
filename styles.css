@@ -1,0 +1,13 @@
+body {
+  max-width: 800px;
+  margin: auto;
+}
+
+img.small {
+  width: 100px;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
